@@ -1,7 +1,7 @@
 wget https://github.com/alois66/Talkie_Nedap/archive/master.zip
 unzip master.zip
 mkdir Talkie_Nedap
-cp -r -f Talkie_Nedap-master/* Talkie_Nedap/*
+cp -r -f Talkie_Nedap-master/* Talkie_Nedap/
 rm -r -f Talkie_Nedap-master
 rm master.zip
 sudo pip install flask
