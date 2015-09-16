@@ -4,7 +4,7 @@ mkdir Talkie_Nedap
 cp -r -f Talkie_Nedap-master/* Talkie_Nedap/
 rm -r -f Talkie_Nedap-master
 rm master.zip
-sudo apt-get undate
+sudo apt-get update
 sudo pip install flask
 sudo pip install RPi.GPIO
 sudo apt-get install -y mplayer
