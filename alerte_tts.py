@@ -92,7 +92,7 @@ def talking(phrase="", lang="FR", jingle=0, urgence=0):
                 repetitions = 0
 
             if repetitions > 0:
-                time.sleep(5)  # Délai entre deux répétions de messages dans le cas d'urgence
+                time.sleep(5)  # Delai entre deux repetions de messages dans le cas d'urgence
 
             repetitions -= 1
     except Exception, expt:
