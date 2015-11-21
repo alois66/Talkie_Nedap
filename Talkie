@@ -1,0 +1,34 @@
+#! /bin/sh
+# /etc/init.d/nedapinit
+
+### BEGIN INIT INFO
+# Provides:          nedapinit
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Simple script to start a program at boot
+# Description:       This simple script calls to /home/pi/nedapinit
+### END INIT INFO
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    # run application you want to start
+    sudo amixer set Master 85%
+    sudo amixer set Headphone 85%
+    sudo amixer set PCM 85%
+    sudo sh /home/pi/Talkie_Nedap/alerte_tts.sh
+    ;;
+  stop)
+    # kill application you want to stop
+    killall Talkie
+    ;;
+  *)
+    echo "Usage: /etc/init.d/Talkie {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+

@@ -13,9 +13,10 @@ sudo dpkg -i Talkie_Nedap/pico_build/libttspico-data_1.0+git20110131-2_all.deb
 sudo dpkg -i Talkie_Nedap/pico_build/libttspico0_1.0+git20110131-2_armhf.deb
 sudo dpkg -i Talkie_Nedap/pico_build/libttspico-utils_1.0+git20110131-2_armhf.deb
 sudo apt-get -f install
-sudo cp Talkie_Nedap/Talkie_init /etc/init.d/
-sudo chown root:root /etc/init.d/Talkie_init
-sudo chmod 0755 /etc/init.d/Talkie_init
-sudo /etc/init.d/Talkie_init enable
-sudo /etc/init.d/Talkie_init start
+sudo mv Talkie_Nedap/Talkie /etc/init.d/
+sudo chown root:root /etc/init.d/Talkie
+sudo chmod a+x /etc/init.d/Talkie
+sudo chmod a+x Talkie_Nedap/alerte_tty.py
+sudo chmod a+x Talkie_Nedap/alerte_tty.sh
+sudo /etc/init.d/Talkie start
 
