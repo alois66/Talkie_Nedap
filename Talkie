@@ -1,14 +1,14 @@
 #! /bin/sh
-# /etc/init.d/nedapinit
+# /etc/init.d/Talkie
 
 ### BEGIN INIT INFO
-# Provides:          nedapinit
+# Provides:          Talkie
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Simple script to start a program at boot
-# Description:       This simple script calls to /home/pi/nedapinit
+# Description:       This simple script calls to /home/pi/Talkie_Nedap/alerte_tts.sh
 ### END INIT INFO
 
 # Carry out specific functions when asked to by the system

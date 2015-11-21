@@ -18,5 +18,6 @@ sudo chown root:root /etc/init.d/Talkie
 sudo chmod a+x /etc/init.d/Talkie
 sudo chmod a+x Talkie_Nedap/alerte_tty.py
 sudo chmod a+x Talkie_Nedap/alerte_tty.sh
+ sudo update-rc.d Talkie defaults
 sudo /etc/init.d/Talkie start
 
