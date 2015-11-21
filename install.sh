@@ -18,3 +18,4 @@ sudo chown root:root /etc/init.d/Talkie_init
 sudo chmod 0755 /etc/init.d/Talkie_init
 sudo /etc/init.d/Talkie_init enable
 sudo /etc/init.d/Talkie_init start
+
