@@ -150,14 +150,13 @@ if __name__ == "__main__":
         quit()
 
     try:
-        talkie.run(host='0.0.0.0', port=4001)
+        talkie.run(host='0.0.0.0',port=4001)
     except KeyboardInterrupt:
         print 'Ctrl+C pressed cleaning'
-        quit()
         GPIO.cleanup()
-        except:
+    except:
         GPIO.cleanup()
-        finally:
+    finally:
         GPIO.cleanup()
         
         
